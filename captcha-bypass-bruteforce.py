@@ -70,7 +70,7 @@ for line in words:
 			print("Wrong Captha at "+ password)
 			mymy()
 		elif "<font color=\"red\">Invalid Credentials!</font>	</body>" in brute.text:
-			print("Invalid Creds")
+			print("Invalid Creds at "+ password)
 		else:
 			print("Your Password is " + password)
 			exit()
