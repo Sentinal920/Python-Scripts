@@ -11,7 +11,7 @@ proxyDict = { "http"  : http_proxy}
 for line in words:
 
 	def mymy():
-		url = "http://enigma.test.net-square.com:26010/cod/captcha.ns"
+		url = "xxxxxxxxxxxxxxx"
 
 		headers = {  
 	    "Host": "enigma.test.net-square.com:26010",
@@ -20,12 +20,12 @@ for line in words:
 		"Accept-Language": "en-US,en;q=0.5",
 		"Accept-Encoding": "gzip, deflate",
 		"Connection": "close",
-		"Cookie": "ENIGMA-SESSION=lrQqA3VKgCleh11jR1sLWeDVLVc;",
+		"Cookie": "xxxxxxxxx=xxxxxxxxxxxxx",
 		"Upgrade-Insecure-Requests": "1"
 
 	}
 
-		cookies = {'ENIGMA-SESSION': 'lrQqA3VKgCleh11jR1sLWeDVLVc;'}
+		cookies = {'xxxxxxxxx': 'xxxxxxxxxxxx'}
 		#r = requests.get(url, cookies=cookies,proxies=proxyDict)
 		r = requests.get(url, cookies=cookies)
 		#print(r.content)
@@ -36,7 +36,7 @@ for line in words:
 		
 		captcha = commands.getoutput("tesseract img.png -").strip()
 		
-		url2 = "http://enigma.test.net-square.com:26010/cod/c39.ns"
+		url2 = "xxxxxxxxxxxxxxx"
 		headers2 = {
 		'Host': 'enigma.test.net-square.com:26010',
 		'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0',
@@ -47,8 +47,8 @@ for line in words:
 		'Content-Length': '47',
 		'Origin': 'http://enigma.test.net-square.com:26010',
 		'Connection': 'close',
-		'Referer': 'http://enigma.test.net-square.com:26010/cod/c39.ns',
-		'Cookie': 'ENIGMA-SESSION=lrQqA3VKgCleh11jR1sLWeDVLVc;',
+		'Referer': 'xxxxxxxxxxxxx',
+		'Cookie': 'xxxxxxxxxxxxx=xxxxxxxxxxxxxxxx',
 		'Upgrade-Insecure-Requests': '1',
 		}
 		
